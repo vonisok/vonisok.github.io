@@ -1,8 +1,8 @@
 ---
-layout: post
-title: "My First Post"
-date: 2021-03-24 15:34:30 -0000
-categories: CATEGORY
+title: "Python Web Cloner"
+date: 2024-03-24 12:00:00 -500
+categories: [scripting]
+tags: [python]
 ---
 
 # Python Web Cloner
