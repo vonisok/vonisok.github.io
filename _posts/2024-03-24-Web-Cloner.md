@@ -1,10 +1,9 @@
 ---
 title: "Python Web Cloner"
 date: 2024-03-24 12:00:00 -500
-categories: [scripting]
-tags: [python]
+categories: [Python]
+tags: [scripting]
 ---
-
 # Python Web Cloner
 
 In this tutorial, we'll explore how to create a simple web cloner using Python. A web cloner copies the contents of a webpage, allowing you to save it for offline use. We'll use Python's requests library to fetch the webpage and BeautifulSoup from bs4 to parse the HTML content.
@@ -18,7 +17,7 @@ pip install requests beautifulsoup4
 
 ### Step 1: Fetching the Webpage
 
-    First, we need to fetch the content of the webpage we want to clone. We'll use the requests library for this purpose.
+First, we need to fetch the content of the webpage we want to clone. We'll use the requests library for this purpose.
 
 ```python
 import requests
