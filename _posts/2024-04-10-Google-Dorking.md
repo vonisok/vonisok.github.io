@@ -10,14 +10,13 @@ Google Dorks are search queries that use advanced search operators in Google to 
 
 ### Sensitive Directories
 
-```code
-intitle:"index of" "/admin/"
-```
+
+`intitle:"index of" "/admin/"`
+
  Finds web server directories that contain administrative functions.
 
-```code
-intitle:"index of" backup
-```
+`intitle:"index of" backup`
+
  Finds directories named "backup".
 
 ### Configuration Files Exposed
