@@ -1,10 +1,10 @@
 ---
-title: "Python Web Cloner"
-date: 2024-03-24 12:00:00 -500
-categories: [Python]
-tags: [scripting]
+title: "Google Dorks"
+date: 2024-04-10 12:00:00 -500
+categories: [OSINT]
+tags: [recon]
 ---
-# Google Dorks Explained
+# Google Dorks
 
 Google Dorks are search queries that use advanced search operators in Google to find specific information that is not readily available on a website. They can be used to discover vulnerable web resources by searching for specific file types, error messages, administration panels, and sensitive files. Here are some examples of Google Dorks that can help find potentially vulnerable web resources:
 
