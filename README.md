@@ -1,56 +1,119 @@
-# Chirpy Starter
+# Personal Blog
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+A modern, responsive personal blog built with Jekyll and the beautiful Chirpy theme.
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+## 🌟 Features
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+- **Clean, Modern Design**: Professional and minimalist aesthetic
+- **Dark/Light Mode**: Automatic theme switching with manual toggle
+- **Responsive Layout**: Looks great on all devices
+- **Search Functionality**: Fast and efficient content search
+- **SEO Optimized**: Built-in SEO features for better visibility
+- **Social Integration**: Easy social media sharing and contact options
+- **Code Highlighting**: Beautiful syntax highlighting for code blocks
+- **Categories & Tags**: Organized content discovery
+- **Archives**: Timeline view of all posts
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+## 🚀 Quick Start
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+### Prerequisites
+
+- Ruby (version 3.0 or higher)
+- Bundler gem
+
+### Local Development
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/vonisok/vonisok.github.io.git
+   cd vonisok.github.io
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   bundle install
+   ```
+
+3. **Run the site locally**:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. **View your site**: Open your browser to `http://localhost:4000`
+
+## 📝 Writing Posts
+
+Create new posts in the `_posts` directory using the naming convention: `YYYY-MM-DD-title.md`
+
+### Front Matter Example
+
+```yaml
+---
+title: Your Post Title
+date: 2025-01-17 16:00:00 -0500
+categories: [Category1, Category2]
+tags: [tag1, tag2, tag3]
+image:
+  path: /path/to/image.jpg
+  alt: Alt text for the image
+---
+
+Your post content here...
 ```
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+## ⚙️ Customization
 
-## Prerequisites
+### Personal Information
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of
-the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+Edit `_config.yml` to update:
+- Site title and description
+- Your name and contact information
+- Social media links
+- Google Analytics ID (optional)
+- Timezone
 
-## Installation
+### Navigation
 
-Sign in to GitHub and [**use this template**][use-template] to generate a brand new repository and name it
-`USERNAME.github.io`, where `USERNAME` represents your GitHub username.
+Customize the sidebar navigation by editing files in the `_tabs` directory:
+- `categories.md` - Categories page
+- `tags.md` - Tags page  
+- `archives.md` - Archives page
+- `about.md` - About page
 
-Then clone it to your local machine and run:
+### Contact Options
 
-```console
-$ bundle
-```
+Edit `_data/contact.yml` to configure social media links in the sidebar.
 
-## Usage
+### Sharing Options
 
-Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
+Edit `_data/share.yml` to configure social sharing buttons on posts.
 
-## License
+## 🎨 Theme Features
 
-This work is published under [MIT][mit] License.
+This site uses the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme, which includes:
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[use-template]: https://github.com/cotes2020/chirpy-starter/generate
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+- Progressive Web App (PWA) support
+- Table of Contents for posts
+- Code block copy buttons
+- Math expression support (LaTeX)
+- Mermaid diagram support
+- Disqus comments integration
+- Google Analytics integration
+
+## 📚 Learn More
+
+- [Jekyll Documentation](https://jekyllrb.com/docs/)
+- [Chirpy Theme Documentation](https://chirpy.cotes.page/)
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Suggestions and improvements are welcome! Feel free to open an issue or submit a pull request.
+
+---
+
+Built with ❤️ using [Jekyll](https://jekyllrb.com/) and [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) 
