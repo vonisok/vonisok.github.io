@@ -117,3 +117,39 @@ Suggestions and improvements are welcome! Feel free to open an issue or submit a
 ---
 
 Built with ❤️ using [Jekyll](https://jekyllrb.com/) and [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) 
+
+
+
+
+Add and Commit Your Files:
+
+    Add all your project files to the Git staging area: 
+
+Code
+
+        git add .
+
+    Commit the staged files with a descriptive message:
+
+Code
+
+        git commit -m "Initial commit of my project"
+
+    Connect Local Repository to GitHub:
+
+    Go back to the newly created repository on GitHub and copy its URL (usually found under the "Code" button).
+
+Add this remote repository as an origin to your local Git repository:
+
+Code
+
+        git remote add origin <your_github_repository_url>
+
+Replace <your_github_repository_url> with the actual URL copied from GitHub.
+
+    Push Your Project to GitHub:
+        Push your local commits to the main (or master) branch of your remote GitHub repository: 
+
+Code
+
+        git push -u origin main
