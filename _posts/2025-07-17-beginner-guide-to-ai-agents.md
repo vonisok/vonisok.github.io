@@ -4,7 +4,7 @@ date: 2025-07-17 16:00:00 -0400
 categories: [AI, Research]
 tags: [ai, agents, research, automation, beginner, langchain, autogpt, crewai, babyagi]
 image:
-  path: /assets/img/posts/javascript-intro.jpg  # Replace with your image path
+  path: /assets/img/posts/aiagent.png  # Replace with your image path
   alt: Abstract AI agents concept illustration
 description: Learn what AI agents are, how to try Auto‑GPT/BabyAGI/AgentGPT/CrewAI, and how to build a simple research agent with tools and memory.
 ---
@@ -15,8 +15,8 @@ AI agents are the next evolution of AI assistants—programs powered by advanced
 
 This guide introduces AI agents from two angles:
 
-- Using existing AI agents (e.g., Auto-GPT, BabyAGI, CrewAI)
-- Building your own AI agent from scratch
+1. **Using existing AI agents (e.g., Auto-GPT, BabyAGI, CrewAI)**
+2. **Building your own AI agent from scratch**
 
 We’ll focus on research-related use cases (automating literature reviews, extracting data, drafting content). No prior programming or ML background is assumed—everything is beginner-friendly with step-by-step explanations and practical tools.
 ## What Are AI Agents and Why They Matter
