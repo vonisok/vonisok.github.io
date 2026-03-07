@@ -11,25 +11,12 @@ order: 5
 {% assign category_defs = site.data.book_categories | default: empty %}
 
 > A visual library with category + subcategory filters. Add first-page screenshots and PDFs, then browse everything in one compact grid.
-{% assign grouped_books = books | sort: "title" | group_by_exp: "book", "book.category" %}
 
-> A curated library for solo founders and builders. Add PDFs and first-page preview images to keep your reading system visual and searchable.
+## Quick setup
 
-## Quick setup for adding books
-
-1. Add a PDF file to: `assets/books/pdfs/`
-2. Add a preview image (first-page screenshot) to: `assets/books/covers/`
-2. Add a preview image (first page screenshot) to: `assets/books/covers/`
-3. Add a new entry in: `_data/books.yml`
-
-```yaml
-- title: "Book Title"
-  author: "Author Name"
-  category: "History"
-  subcategory: "WW2"
-  cover_image: "/assets/books/covers/book-title.jpg"
-  pdf_url: "/assets/books/pdfs/book-title.pdf"
-```
+1. Add PDFs in `assets/books/pdfs/`
+2. Add cover/first-page images in `assets/books/covers/`
+3. Add entries in `_data/books.yml`
 
 {% if category_defs.size > 0 %}
 <section class="category-thumbnail-section">
@@ -80,11 +67,7 @@ order: 5
 {% if books.size > 0 %}
 <div class="book-grid" id="book-grid">
   {% for book in books %}
-  <article
-    class="book-card"
-    data-category="{{ book.category | downcase }}"
-    data-subcategory="{{ book.subcategory | downcase }}"
-  >
+  <article class="book-card" data-category="{{ book.category | downcase }}" data-subcategory="{{ book.subcategory | downcase }}">
     {% if book.cover_image %}
       <img src="{{ book.cover_image | relative_url }}" alt="{{ book.title }} preview image" loading="lazy" />
     {% else %}
@@ -111,217 +94,34 @@ order: 5
   </article>
   {% endfor %}
 </div>
-  category: "Category Name"
-  cover_image: "/assets/books/covers/book-title.jpg"
-  pdf_url: "/assets/books/pdfs/book-title.pdf"
-  description: "One-line summary"
-```
-
----
-
-{% if books.size > 0 %}
-  {% for group in grouped_books %}
-  <section class="book-category-block">
-    <h2>{{ group.name }}</h2>
-    <div class="book-grid">
-      {% for book in group.items %}
-      <article class="book-card">
-        {% if book.cover_image %}
-          <img src="{{ book.cover_image | relative_url }}" alt="{{ book.title }} preview image" loading="lazy" />
-        {% else %}
-          <div class="book-image-placeholder">No Preview Image</div>
-        {% endif %}
-
-        <div class="book-card-body">
-          <h3>{{ book.title }}</h3>
-          {% if book.author %}<p class="book-meta">By {{ book.author }}</p>{% endif %}
-          {% if book.year %}<p class="book-meta">Published {{ book.year }}</p>{% endif %}
-          {% if book.description %}<p>{{ book.description }}</p>{% endif %}
-
-          {% if book.tags %}
-          <p class="book-tags">
-            {% for tag in book.tags %}
-            <span>{{ tag }}</span>
-            {% endfor %}
-          </p>
-          {% endif %}
-
-          <div class="book-actions">
-            {% if book.pdf_url %}
-            <a href="{{ book.pdf_url | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-            {% endif %}
-            {% if book.source_url %}
-            <a href="{{ book.source_url }}" target="_blank" rel="noopener">External Link</a>
-            {% endif %}
-          </div>
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-  {% endfor %}
 {% else %}
   <p>No books added yet. Start by editing <code>_data/books.yml</code>.</p>
 {% endif %}
 
 <style>
 .category-thumbnail-section { margin-top: 1.2rem; }
-.category-thumbnail-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-  gap: 0.7rem;
-  margin-top: 0.6rem;
-}
-.category-thumb-card {
-  border: 1px solid var(--card-border-color, rgba(128,128,128,0.35));
-  border-radius: 10px;
-  padding: 0;
-  overflow: hidden;
-  background: var(--card-bg, rgba(127,127,127,0.08));
-  color: inherit;
-  cursor: pointer;
-}
-.category-thumb-card img,
-.category-thumb-placeholder {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  display: block;
-  background: rgba(127,127,127,0.1);
-}
-.category-thumb-placeholder {
-  display:flex;align-items:center;justify-content:center;font-weight:600;
-}
-.category-thumb-card span { display:block; padding:0.45rem 0.55rem; font-size:0.85rem; }
+.category-thumbnail-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:0.7rem; margin-top:0.6rem; }
+.category-thumb-card { border:1px solid var(--card-border-color, rgba(128,128,128,.35)); border-radius:10px; padding:0; overflow:hidden; background:var(--card-bg, rgba(127,127,127,.08)); color:inherit; cursor:pointer; }
+.category-thumb-card img, .category-thumb-placeholder { width:100%; height:120px; object-fit:cover; display:block; background:rgba(127,127,127,.1); }
+.category-thumb-placeholder { display:flex; align-items:center; justify-content:center; font-weight:600; }
+.category-thumb-card span { display:block; padding:.45rem .55rem; font-size:.85rem; }
 
-.book-filter-bar {
-  margin: 1.2rem 0 0.8rem;
-  display: flex;
-  gap: 0.75rem;
-  align-items: end;
-  flex-wrap: wrap;
-}
+.book-filter-bar { margin:1.2rem 0 .8rem; display:flex; gap:.75rem; align-items:end; flex-wrap:wrap; }
+.book-filter-bar label { display:grid; gap:.35rem; font-weight:600; }
+.book-filter-bar select, .book-filter-bar button { font:inherit; border:1px solid var(--card-border-color, rgba(128,128,128,.35)); border-radius:8px; background:var(--card-bg, rgba(127,127,127,.08)); color:inherit; padding:.4rem .6rem; }
+.book-count { opacity:.8; margin-bottom:.8rem; }
 
-.book-filter-bar label { display: grid; gap: 0.35rem; font-weight: 600; }
-
-.book-filter-bar select,
-.book-filter-bar button {
-  font: inherit;
-  border: 1px solid var(--card-border-color, rgba(128, 128, 128, 0.35));
-  border-radius: 8px;
-  background: var(--card-bg, rgba(127, 127, 127, 0.08));
-  color: inherit;
-  padding: 0.4rem 0.6rem;
-}
-
-.book-count { opacity: 0.8; margin-bottom: 0.8rem; }
-
-.book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-  gap: 0.9rem;
-.book-category-block {
-  margin-top: 1.6rem;
-}
-
-.book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-}
-
-.book-card {
-  border: 1px solid var(--card-border-color, rgba(128, 128, 128, 0.25));
-  border-radius: 12px;
-  overflow: hidden;
-  background: var(--card-bg, rgba(127, 127, 127, 0.06));
-}
-
-.book-card img,
-.book-image-placeholder {
-  width: 100%;
-  height: 220px;
-  height: 260px;
-  object-fit: cover;
-  display: block;
-  background: rgba(127, 127, 127, 0.1);
-}
-
-.book-image-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
-  opacity: 0.75;
-}
-
-.book-card-body { padding: 0.75rem; }
-.book-card-body h3 { margin: 0 0 0.3rem; font-size: 1rem; }
-.book-meta { margin: 0; opacity: 0.85; font-size: 0.88rem; }
-
-.book-taxonomy {
-  margin: 0.55rem 0 0;
-  display: flex;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-}
-
-.book-taxonomy span {
-  font-size: 0.72rem;
-  border: 1px solid var(--card-border-color, rgba(128, 128, 128, 0.35));
-  border-radius: 999px;
-  padding: 0.12rem 0.45rem;
-}
-
-.book-actions { margin-top: 0.7rem; display: flex; gap: 0.45rem; flex-wrap: wrap; }
-
-.book-actions a {
-  display: inline-block;
-  font-size: 0.82rem;
-  padding: 0.28rem 0.52rem;
-.book-card-body {
-  padding: 0.9rem;
-}
-
-.book-card-body h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.book-meta {
-  margin: 0;
-  opacity: 0.85;
-  font-size: 0.92rem;
-}
-
-.book-tags {
-  display: flex;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-  margin-top: 0.7rem;
-}
-
-.book-tags span {
-  font-size: 0.75rem;
-  border: 1px solid var(--card-border-color, rgba(128, 128, 128, 0.35));
-  border-radius: 999px;
-  padding: 0.15rem 0.5rem;
-}
-
-.book-actions {
-  margin-top: 0.9rem;
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.book-actions a {
-  display: inline-block;
-  padding: 0.35rem 0.6rem;
-  border: 1px solid var(--card-border-color, rgba(128, 128, 128, 0.35));
-  border-radius: 8px;
-  text-decoration: none;
-}
+.book-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:.9rem; }
+.book-card { border:1px solid var(--card-border-color, rgba(128,128,128,.25)); border-radius:12px; overflow:hidden; background:var(--card-bg, rgba(127,127,127,.06)); }
+.book-card img, .book-image-placeholder { width:100%; height:220px; object-fit:cover; display:block; background:rgba(127,127,127,.1); }
+.book-image-placeholder { display:flex; align-items:center; justify-content:center; font-size:.9rem; opacity:.75; }
+.book-card-body { padding:.75rem; }
+.book-card-body h3 { margin:0 0 .3rem; font-size:1rem; }
+.book-meta { margin:0; opacity:.85; font-size:.88rem; }
+.book-taxonomy { margin:.55rem 0 0; display:flex; gap:.35rem; flex-wrap:wrap; }
+.book-taxonomy span { font-size:.72rem; border:1px solid var(--card-border-color, rgba(128,128,128,.35)); border-radius:999px; padding:.12rem .45rem; }
+.book-actions { margin-top:.7rem; display:flex; gap:.45rem; flex-wrap:wrap; }
+.book-actions a { display:inline-block; font-size:.82rem; padding:.28rem .52rem; border:1px solid var(--card-border-color, rgba(128,128,128,.35)); border-radius:8px; text-decoration:none; }
 </style>
 
 <script>
@@ -340,47 +140,31 @@ order: 5
     const allOptions = Array.from(subcategoryFilter.querySelectorAll('option'));
 
     allOptions.forEach((option) => {
-      if (option.value === 'all') {
-        option.hidden = false;
-        return;
-      }
-
-      if (selectedCategory === 'all') {
-        option.hidden = false;
-        return;
-      }
-
-      const hasMatch = cards.some((card) => card.dataset.category === selectedCategory && card.dataset.subcategory === option.value);
-      option.hidden = !hasMatch;
+      if (option.value === 'all') return (option.hidden = false);
+      if (selectedCategory === 'all') return (option.hidden = false);
+      option.hidden = !cards.some((card) => card.dataset.category === selectedCategory && card.dataset.subcategory === option.value);
     });
 
-    if (subcategoryFilter.selectedOptions[0]?.hidden) {
-      subcategoryFilter.value = 'all';
-    }
+    if (subcategoryFilter.selectedOptions[0]?.hidden) subcategoryFilter.value = 'all';
   }
 
   function applyFilters() {
     const selectedCategory = categoryFilter.value;
     const selectedSubcategory = subcategoryFilter.value;
-
     let visibleCount = 0;
 
     cards.forEach((card) => {
       const categoryMatches = selectedCategory === 'all' || card.dataset.category === selectedCategory;
       const subcategoryMatches = selectedSubcategory === 'all' || card.dataset.subcategory === selectedSubcategory;
-      const shouldShow = categoryMatches && subcategoryMatches;
-      card.hidden = !shouldShow;
-      if (shouldShow) visibleCount += 1;
+      const show = categoryMatches && subcategoryMatches;
+      card.hidden = !show;
+      if (show) visibleCount += 1;
     });
 
     countEl.textContent = `${visibleCount} book${visibleCount === 1 ? '' : 's'} shown`;
   }
 
-  categoryFilter.addEventListener('change', () => {
-    updateSubcategoryOptions();
-    applyFilters();
-  });
-
+  categoryFilter.addEventListener('change', () => { updateSubcategoryOptions(); applyFilters(); });
   subcategoryFilter.addEventListener('change', applyFilters);
 
   categoryButtons.forEach((button) => {

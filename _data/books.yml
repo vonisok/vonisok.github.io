@@ -1,20 +1,5 @@
-# Book library data source for /books/
-#
-# How to add a new book:
-# - Put PDF files in: /assets/books/pdfs/
-# - Put cover/first-page preview images in: /assets/books/covers/
-# - Add one item below using this shape:
-#
-# - title: "Book Title"
-#   author: "Author Name"
-#   category: "History"                            # top-level group (e.g., Drugs, Politics, History)
-#   subcategory: "WW2"                             # narrower grouping (e.g., Cocaine, Weed, Manifestos)
-#   cover_image: "/assets/books/covers/book.jpg"
-#   pdf_url: "/assets/books/pdfs/book.pdf"         # optional
-#   source_url: "https://example.com/book"         # optional
-#   year: 2024                                       # optional
+# Books catalog used by /books/
 
-# Game Theory
 - title: "The Art of Strategy"
   author: "Avinash K. Dixit, Barry J. Nalebuff"
   category: "Game Theory"
@@ -43,7 +28,6 @@
   cover_image: "/assets/books/covers/theory-of-games-and-economic-behavior-first-page.jpg"
   pdf_url: "/assets/books/pdfs/theory-of-games-and-economic-behavior.pdf"
 
-# Drugs > Cocaine
 - title: "An Anatomy of Addiction: Sigmund Freud, William Halsted, and the Miracle Drug Cocaine"
   author: "Howard Markel"
   category: "Drugs"
@@ -124,7 +108,6 @@
   pdf_url: "/assets/books/pdfs/neuroplasticity-mesolimbic-dopamine-cocaine-addiction.pdf"
   year: 2008
 
-# Existing examples
 - title: "The Prince"
   author: "Niccolò Machiavelli"
   category: "Politics"
@@ -141,8 +124,6 @@
   pdf_url: "/assets/books/pdfs/the-second-world-war.pdf"
   year: 2012
 
-
-# Legacy catalog entries retained from main
 - title: "The Lean Startup"
   author: "Eric Ries"
   category: "Startups"
@@ -150,22 +131,6 @@
   cover_image: "/assets/books/covers/the-lean-startup-first-page.jpg"
   pdf_url: "/assets/books/pdfs/the-lean-startup.pdf"
   year: 2011
-#   category: "Category Name"
-#   cover_image: "/assets/books/covers/book-title.jpg"
-#   pdf_url: "/assets/books/pdfs/book-title.pdf"   # optional
-#   source_url: "https://example.com"              # optional (for non-local file links)
-#   description: "Short summary"                    # optional
-#   year: 2024                                       # optional
-#   tags: [mindset, strategy]                        # optional
-
-- title: "The Lean Startup"
-  author: "Eric Ries"
-  category: "Startups"
-  cover_image: "/assets/books/covers/the-lean-startup-first-page.jpg"
-  pdf_url: "/assets/books/pdfs/the-lean-startup.pdf"
-  description: "Build-measure-learn loops for rapid product iteration and validated learning."
-  year: 2011
-  tags: [mvp, experimentation, product]
 
 - title: "Deep Work"
   author: "Cal Newport"
@@ -174,11 +139,6 @@
   cover_image: "/assets/books/covers/deep-work-first-page.jpg"
   pdf_url: "/assets/books/pdfs/deep-work.pdf"
   year: 2016
-  cover_image: "/assets/books/covers/deep-work-first-page.jpg"
-  pdf_url: "/assets/books/pdfs/deep-work.pdf"
-  description: "A practical framework for high-focus execution and better output quality."
-  year: 2016
-  tags: [focus, productivity, habits]
 
 - title: "Inspired"
   author: "Marty Cagan"
@@ -187,8 +147,3 @@
   cover_image: "/assets/books/covers/inspired-first-page.jpg"
   source_url: "https://www.svpg.com/books/inspired-how-to-create-tech-products-customers-love/"
   year: 2017
-  cover_image: "/assets/books/covers/inspired-first-page.jpg"
-  source_url: "https://www.svpg.com/books/inspired-how-to-create-tech-products-customers-love/"
-  description: "How successful product teams discover and build products customers truly want."
-  year: 2017
-  tags: [product, discovery, teams]
