@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="transparent"/>
+  <g transform="translate(512 580) rotate(-13)">
+    <rect x="-380" y="-115" width="760" height="230" rx="95" ry="95" fill="#f4f4f0" stroke="#d8d8d3" stroke-width="6"/>
+    <line x1="-180" y1="-85" x2="-180" y2="85" stroke="#d0d0cb" stroke-width="8"/>
+    <line x1="190" y1="-85" x2="190" y2="85" stroke="#d0d0cb" stroke-width="8"/>
+    <text x="-300" y="28" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#a9a9a4">X</text>
+    <text x="-120" y="28" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#a9a9a4">ANAX</text>
+    <text x="240" y="28" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#a9a9a4">X</text>
+  </g>
+</svg>
