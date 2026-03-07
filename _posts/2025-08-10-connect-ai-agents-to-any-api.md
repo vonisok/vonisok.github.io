@@ -3,8 +3,8 @@ layout: post
 title: "How to Connect AI Agents to Any API"
 description: "Hands-on, script-first tutorial: authenticate, call APIs, parse JSON, feed results into GPT-4 (or an agent framework), and implement retries/rate limits—ending with a working Semantic Scholar + GPT-4 research agent."
 date: 2025-08-10
-categories: [ai, agents, apis, tutorials]
-tags: [python, requests, langchain, crewai, openai, semantic-scholar, retries, rate-limiting]
+categories: [founder-track, automation-workflows]
+tags: [agent-integration, api-stack, implementation, python, shipping]
 permalink: /guides/connect-ai-agents-to-any-api/
 image: /assets/images/connect-ai-agents-to-any-api/cover.png
 excerpt_separator: "<!--more-->"
