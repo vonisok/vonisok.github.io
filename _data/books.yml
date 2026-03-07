@@ -1,0 +1,43 @@
+# Book library data source for /books/
+#
+# How to add a new book:
+# - Put PDF files in: /assets/books/pdfs/
+# - Put cover/first-page preview images in: /assets/books/covers/
+# - Add one item below using this shape:
+#
+# - title: "Book Title"
+#   author: "Author Name"
+#   category: "Category Name"
+#   cover_image: "/assets/books/covers/book-title.jpg"
+#   pdf_url: "/assets/books/pdfs/book-title.pdf"   # optional
+#   source_url: "https://example.com"              # optional (for non-local file links)
+#   description: "Short summary"                    # optional
+#   year: 2024                                       # optional
+#   tags: [mindset, strategy]                        # optional
+
+- title: "The Lean Startup"
+  author: "Eric Ries"
+  category: "Startups"
+  cover_image: "/assets/books/covers/the-lean-startup-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/the-lean-startup.pdf"
+  description: "Build-measure-learn loops for rapid product iteration and validated learning."
+  year: 2011
+  tags: [mvp, experimentation, product]
+
+- title: "Deep Work"
+  author: "Cal Newport"
+  category: "Focus & Productivity"
+  cover_image: "/assets/books/covers/deep-work-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/deep-work.pdf"
+  description: "A practical framework for high-focus execution and better output quality."
+  year: 2016
+  tags: [focus, productivity, habits]
+
+- title: "Inspired"
+  author: "Marty Cagan"
+  category: "Product"
+  cover_image: "/assets/books/covers/inspired-first-page.jpg"
+  source_url: "https://www.svpg.com/books/inspired-how-to-create-tech-products-customers-love/"
+  description: "How successful product teams discover and build products customers truly want."
+  year: 2017
+  tags: [product, discovery, teams]

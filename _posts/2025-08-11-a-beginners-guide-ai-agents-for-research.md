@@ -3,8 +3,8 @@ layout: post
 title: "A Beginner’s Guide to AI Agents for Research: Using and Building Your Own"
 description: "What AI agents are, how to use existing ones (Auto-GPT, BabyAGI, AgentGPT, CrewAI), and how to build your own—focused on research workflows like literature reviews, citations, drafting, and data extraction."
 date: 2025-08-11
-categories: [ai, agents, research]
-tags: [autogpt, babyagi, agentgpt, crewai, langchain, literature-review, beginners, tutorial]
+categories: [founder-track, research-systems]
+tags: [market-research, ai-agents, beginner-guide, decision-support, execution]
 permalink: /guides/ai-agents-for-research/
 image: /assets/img/posts/aiagent.png
 excerpt_separator: "<!--more-->"
