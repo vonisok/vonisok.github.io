@@ -140,3 +140,29 @@
   cover_image: "/assets/books/covers/the-second-world-war-first-page.jpg"
   pdf_url: "/assets/books/pdfs/the-second-world-war.pdf"
   year: 2012
+
+
+# Legacy catalog entries retained from main
+- title: "The Lean Startup"
+  author: "Eric Ries"
+  category: "Startups"
+  subcategory: "MVP"
+  cover_image: "/assets/books/covers/the-lean-startup-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/the-lean-startup.pdf"
+  year: 2011
+
+- title: "Deep Work"
+  author: "Cal Newport"
+  category: "Focus & Productivity"
+  subcategory: "Habits"
+  cover_image: "/assets/books/covers/deep-work-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/deep-work.pdf"
+  year: 2016
+
+- title: "Inspired"
+  author: "Marty Cagan"
+  category: "Product"
+  subcategory: "Discovery"
+  cover_image: "/assets/books/covers/inspired-first-page.jpg"
+  source_url: "https://www.svpg.com/books/inspired-how-to-create-tech-products-customers-love/"
+  year: 2017
