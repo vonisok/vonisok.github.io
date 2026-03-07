@@ -3,8 +3,8 @@ layout: post
 title: "Guide to APIs for AI Agents"
 description: "Curated, up-to-date APIs for AI agents—search, document parsing/OCR, data, translation, academic, productivity, dev, ML, and cybersecurity—with pricing tiers and use cases."
 date: 2025-08-10
-categories: [ai, ai agents, API]
-tags: [ai, research, ai-agents, tutorial, beginners]
+categories: [founder-track, mvp-build]
+tags: [api-stack, execution, cost-control, indie-hackers, ai-product]
 permalink: /guides/guide-to-apis/
 image:
   path: /assets/img/posts/javascript-intro.jpg  # Change this to your own image path

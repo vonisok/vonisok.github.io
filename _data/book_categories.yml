@@ -1,0 +1,17 @@
+# Optional category thumbnails shown at the top of /books/
+# Add new categories here as needed.
+
+- name: "Drugs"
+  thumbnail: "/assets/books/categories/drugs-thumbnail.svg"
+
+- name: "Politics"
+
+- name: "History"
+
+- name: "Game Theory"
+
+- name: "Startups"
+
+- name: "Focus & Productivity"
+
+- name: "Product"

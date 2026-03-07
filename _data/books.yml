@@ -1,0 +1,150 @@
+# Books catalog used by /books/
+# Add each book as an item with title/author/category/subcategory/cover_image.
+
+- title: "The Art of Strategy"
+  author: "Avinash K. Dixit, Barry J. Nalebuff"
+  category: "Game Theory"
+  subcategory: "Strategy"
+  cover_image: "/assets/books/covers/the-art-of-strategy-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/the-art-of-strategy.pdf"
+
+- title: "The Prisoner's Dilemma"
+  author: "William Poundstone"
+  category: "Game Theory"
+  subcategory: "Classics"
+  cover_image: "/assets/books/covers/the-prisoners-dilemma-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/the-prisoners-dilemma.pdf"
+
+- title: "Thinking Strategically"
+  author: "Avinash K. Dixit, Barry J. Nalebuff"
+  category: "Game Theory"
+  subcategory: "Strategy"
+  cover_image: "/assets/books/covers/thinking-strategically-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/thinking-strategically.pdf"
+
+- title: "Theory of Games and Economic Behavior"
+  author: "John von Neumann, Oskar Morgenstern"
+  category: "Game Theory"
+  subcategory: "Classics"
+  cover_image: "/assets/books/covers/theory-of-games-and-economic-behavior-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/theory-of-games-and-economic-behavior.pdf"
+
+- title: "An Anatomy of Addiction: Sigmund Freud, William Halsted, and the Miracle Drug Cocaine"
+  author: "Howard Markel"
+  category: "Drugs"
+  subcategory: "Cocaine"
+  cover_image: "/assets/books/covers/an-anatomy-of-addiction-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/an-anatomy-of-addiction.pdf"
+  year: 2011
+
+- title: "Cocaine: An Unauthorized Biography"
+  author: "Dominic Streatfeild"
+  category: "Drugs"
+  subcategory: "Cocaine"
+  cover_image: "/assets/books/covers/cocaine-an-unauthorized-biography-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/cocaine-an-unauthorized-biography.pdf"
+  year: 2002
+
+- title: "Andean Cocaine: The Making of a Global Drug"
+  author: "Paul Gootenberg"
+  category: "Drugs"
+  subcategory: "Cocaine"
+  cover_image: "/assets/books/covers/andean-cocaine-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/andean-cocaine.pdf"
+  year: 2008
+
+- title: "A Brief History of Cocaine (2nd Edition)"
+  author: "Steven B. Karch"
+  category: "Drugs"
+  subcategory: "Cocaine"
+  cover_image: "/assets/books/covers/a-brief-history-of-cocaine-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/a-brief-history-of-cocaine.pdf"
+  year: 2005
+
+- title: "Cocaine Addiction: Theory, Research, and Treatment"
+  author: "Jerome J. Platt"
+  category: "Drugs"
+  subcategory: "Cocaine"
+  cover_image: "/assets/books/covers/cocaine-addiction-theory-research-treatment-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/cocaine-addiction-theory-research-treatment.pdf"
+  year: 2000
+
+- title: "The Neurobiology of Cocaine Addiction"
+  author: "Eric J. Nestler"
+  category: "Drugs"
+  subcategory: "Cocaine"
+  cover_image: "/assets/books/covers/the-neurobiology-of-cocaine-addiction-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/the-neurobiology-of-cocaine-addiction.pdf"
+  year: 2005
+
+- title: "DARK Classics in Chemical Neuroscience: Cocaine"
+  author: "Various authors"
+  category: "Drugs"
+  subcategory: "Cocaine"
+  cover_image: "/assets/books/covers/dark-classics-chemical-neuroscience-cocaine-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/dark-classics-chemical-neuroscience-cocaine.pdf"
+  year: 2018
+
+- title: "Classic Studies on the Interaction of Cocaine and the Dopamine Transporter"
+  author: "Various foundational works"
+  category: "Drugs"
+  subcategory: "Cocaine"
+  cover_image: "/assets/books/covers/classic-studies-cocaine-dopamine-transporter-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/classic-studies-cocaine-dopamine-transporter.pdf"
+  year: 2015
+
+- title: "Opiate addiction and cocaine addiction: underlying molecular neurobiology and genetics"
+  author: "Mary Jeanne Kreek"
+  category: "Drugs"
+  subcategory: "Cocaine"
+  cover_image: "/assets/books/covers/opiate-and-cocaine-addiction-neurobiology-genetics-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/opiate-and-cocaine-addiction-neurobiology-genetics.pdf"
+  year: 2012
+
+- title: "Neuroplasticity in the mesolimbic dopamine system and cocaine addiction"
+  author: "M.J. Thomas et al."
+  category: "Drugs"
+  subcategory: "Cocaine"
+  cover_image: "/assets/books/covers/neuroplasticity-mesolimbic-dopamine-cocaine-addiction-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/neuroplasticity-mesolimbic-dopamine-cocaine-addiction.pdf"
+  year: 2008
+
+- title: "The Prince"
+  author: "Niccolò Machiavelli"
+  category: "Politics"
+  subcategory: "Manifestos"
+  cover_image: "/assets/books/covers/the-prince-first-page.jpg"
+  source_url: "https://www.gutenberg.org/ebooks/1232"
+  year: 1532
+
+- title: "The Second World War"
+  author: "Antony Beevor"
+  category: "History"
+  subcategory: "WW2"
+  cover_image: "/assets/books/covers/the-second-world-war-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/the-second-world-war.pdf"
+  year: 2012
+
+- title: "The Lean Startup"
+  author: "Eric Ries"
+  category: "Startups"
+  subcategory: "MVP"
+  cover_image: "/assets/books/covers/the-lean-startup-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/the-lean-startup.pdf"
+  year: 2011
+
+- title: "Deep Work"
+  author: "Cal Newport"
+  category: "Focus & Productivity"
+  subcategory: "Habits"
+  cover_image: "/assets/books/covers/deep-work-first-page.jpg"
+  pdf_url: "/assets/books/pdfs/deep-work.pdf"
+  year: 2016
+
+- title: "Inspired"
+  author: "Marty Cagan"
+  category: "Product"
+  subcategory: "Discovery"
+  cover_image: "/assets/books/covers/inspired-first-page.jpg"
+  source_url: "https://www.svpg.com/books/inspired-how-to-create-tech-products-customers-love/"
+  year: 2017
