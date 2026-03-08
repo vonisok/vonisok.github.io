@@ -25,27 +25,7 @@ order: 5
     {% for item in category_defs %}
     <button type="button" class="category-thumb-card" data-category-select="{{ item.name | downcase }}">
       {% if item.thumbnail %}
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
       <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.name }} category thumbnail" loading="lazy" draggable="false" class="category-thumb-img" />
-=======
-      <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.name }} category thumbnail" loading="lazy" />
->>>>>>> theirs
-=======
-      <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.name }} category thumbnail" loading="lazy" />
->>>>>>> theirs
-=======
-      <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.name }} category thumbnail" loading="lazy" />
->>>>>>> theirs
-=======
-      <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.name }} category thumbnail" loading="lazy" />
->>>>>>> theirs
-=======
-      <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.name }} category thumbnail" loading="lazy" />
->>>>>>> theirs
       {% else %}
       <div class="category-thumb-placeholder">{{ item.name }}</div>
       {% endif %}
@@ -121,34 +101,9 @@ order: 5
 <style>
 .category-thumbnail-section { margin-top: 1.2rem; }
 .category-thumbnail-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:0.7rem; margin-top:0.6rem; }
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
 .category-thumb-card { border:1px solid var(--card-border-color, rgba(128,128,128,.35)); border-radius:10px; padding:0; overflow:hidden; background:transparent; color:inherit; cursor:pointer; }
 .category-thumb-card img, .category-thumb-placeholder { width:100%; height:120px; object-fit:cover; display:block; background:transparent; }
 .category-thumb-card .category-thumb-img { pointer-events:none; user-select:none; }
-=======
-.category-thumb-card { border:1px solid var(--card-border-color, rgba(128,128,128,.35)); border-radius:10px; padding:0; overflow:hidden; background:var(--card-bg, rgba(127,127,127,.08)); color:inherit; cursor:pointer; }
-.category-thumb-card img, .category-thumb-placeholder { width:100%; height:120px; object-fit:cover; display:block; background:rgba(127,127,127,.1); }
->>>>>>> theirs
-=======
-.category-thumb-card { border:1px solid var(--card-border-color, rgba(128,128,128,.35)); border-radius:10px; padding:0; overflow:hidden; background:var(--card-bg, rgba(127,127,127,.08)); color:inherit; cursor:pointer; }
-.category-thumb-card img, .category-thumb-placeholder { width:100%; height:120px; object-fit:cover; display:block; background:rgba(127,127,127,.1); }
->>>>>>> theirs
-=======
-.category-thumb-card { border:1px solid var(--card-border-color, rgba(128,128,128,.35)); border-radius:10px; padding:0; overflow:hidden; background:var(--card-bg, rgba(127,127,127,.08)); color:inherit; cursor:pointer; }
-.category-thumb-card img, .category-thumb-placeholder { width:100%; height:120px; object-fit:cover; display:block; background:rgba(127,127,127,.1); }
->>>>>>> theirs
-=======
-.category-thumb-card { border:1px solid var(--card-border-color, rgba(128,128,128,.35)); border-radius:10px; padding:0; overflow:hidden; background:var(--card-bg, rgba(127,127,127,.08)); color:inherit; cursor:pointer; }
-.category-thumb-card img, .category-thumb-placeholder { width:100%; height:120px; object-fit:cover; display:block; background:rgba(127,127,127,.1); }
->>>>>>> theirs
-=======
-.category-thumb-card { border:1px solid var(--card-border-color, rgba(128,128,128,.35)); border-radius:10px; padding:0; overflow:hidden; background:var(--card-bg, rgba(127,127,127,.08)); color:inherit; cursor:pointer; }
-.category-thumb-card img, .category-thumb-placeholder { width:100%; height:120px; object-fit:cover; display:block; background:rgba(127,127,127,.1); }
->>>>>>> theirs
 .category-thumb-placeholder { display:flex; align-items:center; justify-content:center; font-weight:600; }
 .category-thumb-card span { display:block; padding:.45rem .55rem; font-size:.85rem; }
 
