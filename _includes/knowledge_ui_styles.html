@@ -1,0 +1,167 @@
+<style>
+.kh-hero {
+  margin-top: 0.8rem;
+  padding: 1.2rem 1.05rem;
+  border: 1px solid var(--card-border-color, rgba(128, 128, 128, 0.35));
+  border-radius: 14px;
+  background: var(--card-bg, rgba(127, 127, 127, 0.08));
+}
+
+.kh-hero--cyan {
+  background:
+    radial-gradient(130% 150% at 0% 0%, rgba(14, 165, 233, 0.17), transparent 44%),
+    radial-gradient(130% 140% at 100% 100%, rgba(34, 197, 94, 0.12), transparent 52%),
+    var(--card-bg, rgba(127, 127, 127, 0.08));
+}
+
+.kh-hero--gold {
+  background:
+    radial-gradient(130% 140% at 0% 0%, rgba(234, 179, 8, 0.14), transparent 42%),
+    radial-gradient(130% 140% at 100% 100%, rgba(16, 185, 129, 0.12), transparent 50%),
+    var(--card-bg, rgba(127, 127, 127, 0.08));
+}
+
+.kh-hero--violet {
+  background:
+    radial-gradient(130% 150% at 0% 0%, rgba(168, 85, 247, 0.14), transparent 42%),
+    radial-gradient(130% 130% at 100% 100%, rgba(59, 130, 246, 0.12), transparent 50%),
+    var(--card-bg, rgba(127, 127, 127, 0.08));
+}
+
+.kh-hero--orange {
+  background:
+    radial-gradient(130% 150% at 0% 0%, rgba(251, 146, 60, 0.14), transparent 42%),
+    radial-gradient(130% 130% at 100% 100%, rgba(239, 68, 68, 0.12), transparent 50%),
+    var(--card-bg, rgba(127, 127, 127, 0.08));
+}
+
+.kh-eyebrow {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.78;
+}
+
+.kh-hero h1 {
+  margin: 0.35rem 0 0.55rem;
+  line-height: 1.15;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+}
+
+.kh-hero p {
+  margin: 0;
+  opacity: 0.92;
+  max-width: 72ch;
+}
+
+.kh-section {
+  margin-top: 1.2rem;
+}
+
+.kh-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.kh-search {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.kh-search span {
+  font-size: 0.78rem;
+  opacity: 0.82;
+}
+
+.kh-search input {
+  width: min(320px, 100%);
+  font: inherit;
+  border: 1px solid var(--card-border-color, rgba(128, 128, 128, 0.35));
+  border-radius: 9px;
+  background: var(--card-bg, rgba(127, 127, 127, 0.08));
+  color: inherit;
+  padding: 0.45rem 0.6rem;
+}
+
+.kh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.72rem;
+}
+
+.kh-card,
+.kh-panel {
+  border: 1px solid var(--card-border-color, rgba(128, 128, 128, 0.3));
+  border-radius: 12px;
+  background: var(--card-bg, rgba(127, 127, 127, 0.06));
+  padding: 0.78rem 0.84rem;
+}
+
+.kh-card h3,
+.kh-panel h3 {
+  margin: 0 0 0.28rem;
+  font-size: 1rem;
+}
+
+.kh-card p,
+.kh-panel p {
+  margin: 0;
+  opacity: 0.92;
+}
+
+.kh-list {
+  margin: 0.55rem 0 0;
+  padding-left: 1rem;
+}
+
+.kh-list li + li {
+  margin-top: 0.2rem;
+}
+
+.kh-live-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.kh-live-head a {
+  font-weight: 700;
+}
+
+.kh-live-head span {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.kh-empty {
+  margin-top: 0.55rem;
+  opacity: 0.85;
+}
+
+.kh-card,
+.kh-panel,
+.kh-search input {
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.kh-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--link-color, rgba(59, 130, 246, 0.5));
+}
+
+@media (max-width: 700px) {
+  .kh-hero {
+    padding: 1rem 0.85rem;
+  }
+
+  .kh-card,
+  .kh-panel {
+    padding: 0.72rem 0.76rem;
+  }
+}
+</style>

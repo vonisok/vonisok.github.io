@@ -1,43 +1,46 @@
 ---
 # the default layout is 'page'
-title: Execution Library
-icon: fas fa-toolbox
+title: Resource Index
+icon: fas fa-swatchbook
 order: 2
 ---
 
-A practical library for founders who need to ship faster with less noise.
+<section class="kh-hero kh-hero--orange">
+  <p class="kh-eyebrow">Resource First</p>
+  <h1>A working index for tools, references, and signals.</h1>
+  <p>Use this map when you need quality inputs fast without random browsing.</p>
+</section>
 
-## Core operating tags
+<section class="kh-section">
+  <h2>Resource buckets</h2>
+  <div class="kh-grid">
+    <article class="kh-card">
+      <h3>Tooling</h3>
+      <p>Libraries, APIs, frameworks, and utility stacks.</p>
+    </article>
+    <article class="kh-card">
+      <h3>Research Inputs</h3>
+      <p>Datasets, papers, benchmarks, and reliable source pools.</p>
+    </article>
+    <article class="kh-card">
+      <h3>Market Context</h3>
+      <p>Demand shifts, competitive movement, and distribution patterns.</p>
+    </article>
+    <article class="kh-card">
+      <h3>Execution Assets</h3>
+      <p>Templates, checklists, and operating rhythms.</p>
+    </article>
+  </div>
+</section>
 
-### Idea Clarity
-Use this when you need to sharpen a vague concept into a build-ready plan:
-- target user
-- painful trigger
-- promised outcome
-- first success moment
+<section class="kh-section kh-panel">
+  <h2>Adoption filter</h2>
+  <ul class="kh-list">
+    <li>Is it actively maintained?</li>
+    <li>Will it shorten time-to-value this month?</li>
+    <li>Can your stack survive if it changes suddenly?</li>
+    <li>Does it improve user outcomes, not just developer convenience?</li>
+  </ul>
+</section>
 
-### Build Stack
-Use this when you need to decide implementation quickly:
-- API-first architecture
-- agent orchestration patterns
-- storage and memory decisions
-- cost and latency tradeoffs
-
-### User Proof
-Use this when you need confidence that the product matters:
-- user interview prompts
-- lightweight experiments
-- onboarding friction checklist
-- churn diagnosis notes
-
-### Weekly Systems
-Use this when you need consistent progress:
-- weekly planning template
-- release notes rhythm
-- KPI scorecard
-- postmortem prompts
-
-## Recommended workflow
-1. Start in **Idea Map** and open one project.
-2. Add one note per decision, one screenshot per milestone.
-3. Review weekly and cut anything that does not move user value.
+{% include knowledge_ui_styles.html %}

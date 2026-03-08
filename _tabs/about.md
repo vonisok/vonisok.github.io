@@ -1,27 +1,49 @@
 ---
 # the default layout is 'page'
-icon: fas fa-info-circle
-order: 4
+title: Start Here
+icon: fas fa-compass
+order: 3
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+<section class="kh-hero kh-hero--cyan">
+  <p class="kh-eyebrow">Knowledge Desk</p>
+  <h1>A practical AI resource site for solo builders.</h1>
+  <p>
+    This site is a live reference point for what matters now: tools, market signals, working systems,
+    and curated knowledge loops.
+  </p>
+</section>
 
-## About Me
+<section class="kh-section">
+  <h2>How to use this site</h2>
+  <div class="kh-grid">
+    <article class="kh-card">
+      <h3>1. Scan current signals</h3>
+      <p>Start with the home feed and read the newest radar posts first.</p>
+    </article>
+    <article class="kh-card">
+      <h3>2. Explore channels</h3>
+      <p>Use <a href="{{ '/categories/' | relative_url }}">Knowledge Channels</a> to focus by domain.</p>
+    </article>
+    <article class="kh-card">
+      <h3>3. Pull resources</h3>
+      <p>Use <a href="{{ '/tags/' | relative_url }}">Resource Index</a> for tools and references.</p>
+    </article>
+    <article class="kh-card">
+      <h3>4. Track your own work</h3>
+      <p>Use <a href="{{ '/idea-map/' | relative_url }}">Idea Map</a> and <a href="{{ '/books/' | relative_url }}">Books</a> for long-term learning.</p>
+    </article>
+  </div>
+</section>
 
-Welcome to my personal blog! This is where I share my thoughts, experiences, and insights on various topics.
+<section class="kh-section kh-panel">
+  <h2>Editorial intent</h2>
+  <p>Every post should answer one of these questions:</p>
+  <ul class="kh-list">
+    <li>What changed recently that founders should know?</li>
+    <li>Which resources are worth attention right now?</li>
+    <li>What signals should change product decisions this month?</li>
+  </ul>
+</section>
 
-### What You'll Find Here
-
-- **Technical Posts**: Programming tutorials, tips, and best practices
-- **Personal Reflections**: Life experiences and lessons learned
-- **Project Showcases**: Cool projects I've been working on
-- **Learning Journey**: My continuous learning adventures
-
-### Get In Touch
-
-Feel free to reach out if you'd like to connect or discuss any of the topics covered in my posts.
-
----
-
-This site is built with Jekyll using the beautiful Chirpy theme and hosted on GitHub Pages. 
+{% include knowledge_ui_styles.html %}
