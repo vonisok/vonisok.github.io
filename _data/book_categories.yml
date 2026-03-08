@@ -2,7 +2,7 @@
 # Add new categories here as needed.
 
 - name: "Drugs"
-  thumbnail: "/assets/books/categories/drugs-thumbnail.svg"
+  thumbnail: "/assets/img/books/category/drugs/xanax.png"
 
 - name: "Politics"
 
