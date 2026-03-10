@@ -6,6 +6,8 @@ date: 2026-03-08
 categories: [history, declassified-records]
 tags: [mkultra, cia, senate-hearing, intelligence-history, primary-sources]
 permalink: /history/mkultra-full-history/
+image:
+  path: /assets/img/posts/mkultra/mkultra2.jpg
 ---
 
 During the Cold War, the United States intelligence community launched one of the most controversial research programs in modern history.
@@ -26,6 +28,8 @@ The revelations shocked the public and permanently changed how intelligence agen
 
 This article covers the full historical arc of MKUltra, the major experiment categories, and the key archives used by researchers today.
 
+![MKUltra document montage](/assets/img/posts/mkultra/mkultra2.jpg)
+
 ---
 
 ## What Was Project MKUltra?
@@ -41,6 +45,8 @@ Officials worried about capabilities such as:
 - behavior modification through chemical or psychological means
 
 The program was overseen by **Dr. Sidney Gottlieb** of the CIA's Technical Services Staff and eventually expanded into one of the largest covert behavioral research programs in agency history.
+
+![Declassified MKUltra material](/assets/img/posts/mkultra/DeclassifiedMKULTRA.jpg)
 
 ---
 
@@ -86,6 +92,8 @@ LSD became central to many subprojects. Researchers explored whether psychoactiv
 
 Many subjects were dosed without informed consent. Outcomes were unpredictable, and no reliable "truth serum" capability emerged.
 
+![CIA material on LSD use and experimentation](/assets/img/posts/mkultra/Use-of-LSD_0.jpg)
+
 ### Sensory Deprivation
 
 Researchers tested whether sensory isolation could weaken psychological defenses. Methods included:
@@ -129,6 +137,12 @@ A notable sub-operation under the broader MKUltra umbrella was **Operation Midni
 CIA safehouses in cities such as San Francisco and New York were used for controlled observation scenarios. Subjects were reportedly dosed with psychoactive substances while their behavior was monitored through one-way mirrors.
 
 The goal was to observe behavioral changes, decision vulnerability, and manipulation risk under chemical influence.
+
+![Operation Midnight Climax reference image](/assets/img/posts/mkultra/operation-midnight-climax/rawImage.jpg)
+
+![Operation Midnight Climax archival photo](/assets/img/posts/mkultra/operation-midnight-climax/GettyImages-119075305-v2.jpg)
+
+![Operation Midnight Climax book or document cover](/assets/img/posts/mkultra/operation-midnight-climax/71kIS+RTR5L._AC_UF1000,1000_QL80_.jpg)
 
 ---
 
