@@ -1,0 +1,13 @@
+<aside class="ep-card">
+  {% if include.title %}
+  <h3>{{ include.title }}</h3>
+  {% endif %}
+  {% if include.items %}
+  <ul class="ep-list">
+    {% assign fact_items = include.items | split: "||" %}
+    {% for item in fact_items %}
+    <li>{{ item | strip }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</aside>

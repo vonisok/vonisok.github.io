@@ -1,0 +1,12 @@
+<div class="ep-gallery{% if include.class %} {{ include.class }}{% endif %}">
+  {% assign gallery_items = include.items | strip | split: "||" %}
+  {% for item in gallery_items %}
+    {% assign parts = item | split: "|" %}
+    <figure>
+      <img src="{{ parts[0] | strip }}" alt="{{ parts[1] | strip }}" />
+      {% if parts[2] %}
+      <figcaption>{{ parts[2] | strip }}</figcaption>
+      {% endif %}
+    </figure>
+  {% endfor %}
+</div>

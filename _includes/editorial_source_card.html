@@ -1,0 +1,11 @@
+<article>
+  {% if include.title %}
+  <h3>{{ include.title }}</h3>
+  {% endif %}
+  {% if include.description %}
+  <p>{{ include.description }}</p>
+  {% endif %}
+  {% if include.url %}
+  <a href="{{ include.url }}">{{ include.url }}</a>
+  {% endif %}
+</article>
