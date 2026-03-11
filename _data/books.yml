@@ -9,12 +9,8 @@
 - title: "Bitcoin Whitepaper"
   category: "Nerds"
   subcategory: "Crypto"
+  cover_image: "/assets/img/books/category/nerds/btcwhitepaper.png"
   pdf_url: "/assets/books/pdfs/nerds/crypto/btc-whitepaper.pdf"
-
-- title: "IoT Hacking"
-  category: "Nerds"
-  subcategory: "Hacking"
-  pdf_url: "/assets/books/pdfs/nerds/hacking/IoT-hacking.pdf"
 
 - title: "Penetration Testing - A Hands-on Introduction to Hacking"
   category: "Nerds"
