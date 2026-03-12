@@ -12,9 +12,22 @@
   cover_image: "/assets/img/books/category/nerds/btcwhitepaper.png"
   pdf_url: "/assets/books/pdfs/nerds/crypto/btc-whitepaper.pdf"
 
+- title: "Manual on Cryptography"
+  category: "Nerds"
+  subcategory: "Crypto"
+  cover_image: "/assets/img/books/category/nerds/manual-on-cryptography.png"
+  pdf_url: "/assets/books/pdfs/nerds/crypto/manual-on-cryptography.pdf"
+
+- title: "Cryptology's Role in the Early Development of Computer Capabilities in the United States"
+  category: "Nerds"
+  subcategory: "Crypto"
+  cover_image: "/assets/img/books/category/nerds/cryptologys-role-in-early-computer-capabilities.png"
+  pdf_url: "/assets/books/pdfs/nerds/crypto/cryptologys-role-in-early-computer-capabilities.pdf"
+
 - title: "Penetration Testing - A Hands-on Introduction to Hacking"
   category: "Nerds"
   subcategory: "Hacking"
+  cover_image: "/assets/img/books/category/nerds/pentesting.png"
   pdf_url: "/assets/books/pdfs/nerds/hacking/Penetration%20Testing%20-%20A%20hands-on%20introduction%20to%20Hacking.pdf"
 
 - title: "Professional Penetration Testing: Creating and Operating a Formal Hacking Lab"
@@ -25,9 +38,34 @@
 - title: "RTFM Red Team Field Manual"
   category: "Nerds"
   subcategory: "Hacking"
+  cover_image: "/assets/img/books/category/nerds/rftm.jpg"
   pdf_url: "/assets/books/pdfs/nerds/hacking/rtfm-red-team-field-manual.pdf"
 
 - title: "DoD OPSEC Manual"
   category: "Nerds"
   subcategory: "OPSEC"
   pdf_url: "/assets/books/pdfs/nerds/OPSEC/DoDopsecmanual.pdf"
+
+- title: "Simple Sabotage Field Manual"
+  category: "History"
+  subcategory: "Intelligence"
+  cover_image: "/assets/img/books/category/history/simple-sabotage-field-manual.png"
+  pdf_url: "/assets/books/pdfs/history/intelligence/simple-sabotage-field-manual.pdf"
+
+- title: "The SIGINT Background"
+  category: "History"
+  subcategory: "Intelligence"
+  cover_image: "/assets/img/books/category/history/the-sigint-background.png"
+  pdf_url: "/assets/books/pdfs/history/intelligence/the-sigint-background.pdf"
+
+- title: "American Cryptology during the Cold War, 1945-1989, Book I"
+  category: "History"
+  subcategory: "Intelligence"
+  cover_image: "/assets/img/books/category/history/american-cryptology-during-the-cold-war-book-1.png"
+  pdf_url: "/assets/books/pdfs/history/intelligence/american-cryptology-during-the-cold-war-book-1.pdf"
+
+- title: "A Dangerous Business: The U.S. Navy and National Reconnaissance During the Cold War"
+  category: "History"
+  subcategory: "Intelligence"
+  cover_image: "/assets/img/books/category/history/a-dangerous-business.png"
+  pdf_url: "/assets/books/pdfs/history/intelligence/a-dangerous-business.pdf"
